@@ -1,0 +1,271 @@
+:root {
+    --color-primaria: #2563EB;
+    --hover-botoes: #1D4ED8;
+    --textos-principais: hsl(221, 39%, 11%);
+    --color-font-branco: hsl(0, 0%, 100%);
+    --color-font-preto: hsl(0, 0%, 0%);
+    --fundo-secoes: hsl(210, 20%, 98%);
+    --color-cinza: hsl(210, 3%, 40%);
+    --color-back-footer: hsl(220, 43%, 11%);
+}
+
+body {
+    padding: 5rem 0 0 0;
+}
+
+.cabecalho {
+    max-width: 100%;
+    width: 100%;
+    height: 10rem;
+    padding: .5rem 0 .5rem;
+    position: fixed;
+    top: 0%;
+    z-index: 99999;
+    background-color: snow;
+
+}
+
+.container-header {
+    min-height: 7rem;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+}
+
+.logo {
+    width: 40rem;
+    height: 7rem;
+    padding: 1.2rem 0 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a img {
+    width: 4rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.name-empresa strong {
+    font-family: Roboto;
+    font-size: 2.2rem;
+    color: var(--color-font-preto);
+}
+
+.nav-bar {
+    max-width: 100%;
+    height: 7rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-cinza);
+    font-family: Roboto;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+}
+
+a.btn-orcamento {
+    height: fit-content;
+    margin: auto 0 0;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-font-branco);
+    background-color: var(--color-primaria);
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+a.btn-orcamento:hover {
+    background-color: var(--color-font-branco);
+    color: var(--color-font-preto);
+    outline: 2px solid var(--color-primaria);
+    outline-offset: 2px;
+    transition: all .4s ease, color .4s ease, .4s ease;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-font-branco);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+.botao-topo:hover {
+    background-color: var(--color-primaria);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#conteudo-principal:hover header[id="header-cabecalho"] {
+    box-shadow: 0px 2px 15px -7px #585858;
+    transition: all .4s ease;
+}
+
+.menu #menu-color {
+    border-bottom: 3px solid var(--color-primaria);
+    color: var(--color-primaria);
+}
+
+/*===================
+    MediaQueries
+=====================
+*/
+
+@media (max-width: 767px) {
+
+
+    .nav-bar {
+        position: static;
+        flex-direction: row-reverse;
+        justify-content: end;
+        padding-right: 1.5rem;
+    }
+
+    .container-menu {
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-primaria);
+        box-shadow: 0px 11px 13px -6px rgba(0, 0, 0, 0.3);
+    }
+
+    #tg-toggle:checked~.container-menu {
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        color: white;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    a.btn-orcamento {
+        margin: 1.5rem;
+        display: block;
+        text-align: center;
+    }
+
+    label.hamburguer {
+        display: block;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .menu #menu-color {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--color-font-branco);
+    }
+}
+
+@media (max-width: 940px) {
+
+    .nav-bar {
+        justify-content: flex-start;
+    }
+
+    a.btn-orcamento {
+        padding: 1rem .2rem;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .menu {
+        gap: 0;
+    }
+
+    .logo {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 1.5rem;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 1.5rem;
+        justify-content: start;
+    }
+
+    .logo a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name-empresa strong {
+        height: 100%;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+}

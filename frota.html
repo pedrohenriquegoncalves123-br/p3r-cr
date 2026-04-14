@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frota.css">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        #menu-color {
+            border-bottom: 3px solid var(--color-primaria);
+            color: var(--color-primaria);
+        }
+    </style>
+    <title>Serviços</title>
+</head>
+
+<body>
+    <div id="topo"></div>
+    <header class="cabecalho">
+        <div class="container-header">
+            <div class="logo">
+                <a href="Inicio.html" style="text-decoration: none;">
+                    <img src="icone-logo-site.png" alt="[LOGO-SITE]">
+                    <p class="name-empresa"><strong>TransExpress</strong></p>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <input type="checkbox" id="tg-toggle" name="tg-toggle" style="display: none;">
+                <div class="container-menu">
+                    <ul class="menu">
+                        <li><a href="../paginas.site/Inicio.html">Início</a></li>
+                        <li><a href="../paginas.site/sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="frota.html" id="menu-color">Frota</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html" class="btn-orcamento">Solicitar Orçamento</a></li>
+                    </ul>
+                </div>
+
+                <label for="tg-toggle" class="hamburguer">
+                    <img src="menu-hamburguer-icone.png" alt="" width="30px" height="30px">
+                </label>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <article class="banner-secao">
+            <div class="banner">
+                <h1>Nossa Frota</h1>
+                <p class="text-banner">Equipamentos modernos e versáteis para atender qualquer tipo de demanda logística
+                </p>
+            </div>
+        </article>
+        <section class="conteudo-principal-container">
+            <section class="secao-frota" id="frota">
+                <div class="container-frota-secao">
+                    <section class="cards-nossa-frota" id="frota-moderna">
+                        <div class="container">
+                            <div class="card-frota">
+                                <div class="img-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                        fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-truck-icon lucide-truck">
+                                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                                        <path d="M15 18H9" />
+                                        <path
+                                            d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                                        <circle cx="17" cy="18" r="2" />
+                                        <circle cx="7" cy="18" r="2" />
+                                    </svg>
+                                </div>
+                                <div class="content-card">
+                                    <h3>
+                                        <strong>Frota Moderna</strong>
+                                    </h3>
+                                    <p>Veiculos novos e semi-novos com tecnologia de ponta </p>
+                                </div>
+                            </div>
+                            <div class="card-frota">
+                                <div class="img-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                        fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                    </svg>
+                                </div>
+                                <div class="content-card">
+                                    <h3>
+                                        <strong>Seguro Total</strong>
+                                    </h3>
+                                    <p>Todas as cargas 100% seguradas durante o transporte</p>
+                                </div>
+                            </div>
+                            <div class="card-frota" id="rastreamento">
+                                <div class="img-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                        fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-gauge-icon lucide-gauge">
+                                        <path d="m12 14 4-4" />
+                                        <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+                                    </svg>
+                                </div>
+                                <div class="content-card">
+                                    <h3>
+                                        <strong>Rastreamento</strong>
+                                    </h3>
+                                    <p>Monitoramento em tempo real de todas as entregas</p>
+                                </div>
+                            </div>
+                            <div class="card-frota" id="manutencao">
+                                <div class="img-container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+                                        fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" />
+                                    </svg>
+                                </div>
+                                <div class="content-card">
+                                    <h3>
+                                        <strong>Manutenção</strong>
+                                    </h3>
+                                    <p>Manutenção preventiva e preditiva constante</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-cards-veiculos">
+                        <article class="container">
+                            <h2 class="h2-title-section"><strong>
+                                    Tipos de Veículos
+                                </strong></h2>
+                            <div class="card-veiculos">
+                                <h3 class="title-veiculos">
+                                    <strong>Caminhões Leves</strong>
+                                </h3>
+                                <p class="info-caminhoes"><span>Até 3 toneladas</span></p>
+                                <p>Ideais para entregas urbanas e cargas menores</p>
+                                <ul class="list-card">
+                                    <li>VUCs 3/4</li>
+                                    <li>Carrocerias diversas</li>
+                                    <li>Baú refrigerado disponível</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-veiculos">
+                                <h3 class="title-veiculos">
+                                    <strong>Caminhões Médios</strong>
+                                </h3>
+                                <p class="info-caminhoes"><span>3 a 8 toneladas</span></p>
+                                <p>Perfeitos para entregas regionais e médio porte</p>
+                                <ul class="list-card">
+                                    <li>Truck</li>
+                                    <li>Baú seco e refrigerado</li>
+                                    <li>Plataforma</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-veiculos">
+                                <h3 class="title-veiculos">
+                                    <strong>Caminhões Pesados</strong>
+                                </h3>
+                                <p class="info-caminhoes"><span>8 a 15 toneladas</span></p>
+                                <p>Para grandes volumes e longas distâncias</p>
+                                <ul class="list-card">
+                                    <li>Toco e truck
+                                    </li>
+                                    <li>Carroceria basculante
+                                    </li>
+                                    <li>Carga seca</li>
+                                </ul>
+                            </div>
+                            <div class="card-veiculos">
+                                <h3 class="title-veiculos">
+                                    <strong>Carretas</strong>
+                                </h3>
+                                <p class="info-caminhoes"><span>Acima de 15 toneladas</span></p>
+                                <p>Transporte de grandes cargas e containerizadas</p>
+                                <ul class="list-card">
+                                    <li>Bi-trem e Rodotrem
+                                    </li>
+                                    <li>Graneleira</li>
+                                    <li>Porta container</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer class="footer-site">
+        <article class="container-footer">
+            <section class="column-footer">
+                <div class="logo-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck-icon lucide-truck">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <p class="logo-footer-p"><strong>TransExpress</strong></p>
+                </div>
+                <p>Conectando empresas a seus destinos com segurança e eficiência há mais de 25 anos.</p>
+                <div class="links-icones">
+                    <a href="#" class="facebook">
+                        <img src="facebook icone.png" alt="" class="icone-facebook">
+                    </a>
+                    <a href="#" class="instagram">
+                        <img src="instagram icone.png" alt="" class="instagram-icone">
+                    </a>
+                    <a href="#" class="linkedin">
+                        <img src="linkedin icone.png" alt="" class="linkedin-icone">
+                    </a>
+                    <a href="#" class="twiter">
+                        <img src="x icone.png" alt="" class="x-icone" height="15px">
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer servicos-footer">
+                <h4><b>Serviços</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#transporte-rodoviario">
+                        <p>Transporte Rodoviário</p>
+                    </a>
+                    <a href="#entregas-expressas">
+                        <p>Entregas Expressas</p>
+                    </a>
+                    <a href="#transporte-maritimo">
+                        <p>Transporte Marítimo</p>
+                    </a>
+                    <a href="#armazenagem">
+                        <p>Armazenagem</p>
+                    </a>
+                    <a href="#just-in-time">
+                        <p>Just-in-Time</p>
+                    </a>
+                    <a href="#cargas-especiais">
+                        <p>Cargas Especiais</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer empresa-footer">
+                <h4><b>Empresa</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#sobre">
+                        <p>Sobre Nós</p>
+                    </a>
+                    <a href="#frota">
+                        <p>Nossa Frota</p>
+                    </a>
+                    <a href="#contato">
+                        <p>Contato</p>
+                    </a>
+                    <a href="#trabalhe-conosco">
+                        <p>Trabalhe Conosco</p>
+                    </a>
+                    <a href="#">
+                        <p>Blog</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer contato-footer">
+                <h4><b>Contato</b></h4>
+                <div class="secao-links-footer-empr">
+                    <p>Av. Logística, 1000</p>
+                    <p>São Paulo - SP</p>
+                    <p>(11) 3456-7890</p>
+                    <p>contato@transexpress.com.br</p>
+                </div>
+            </section>
+        </article>
+        <p class="p-footer-final">© 2026 TransExpress - Todos os direitos reservados.</p>
+    </footer>
+    <a href="#topo" class="botao-topo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="lucide lucide-square-chevron-up-icon lucide-square-chevron-up">
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="m8 14 4-4 4 4" />
+        </svg></a>
+</body>
+
+</html>

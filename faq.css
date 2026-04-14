@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../tipografia/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+
+:root {
+    --color-primaria: #2563EB;
+    --hover-botoes: #1D4ED8;
+    --textos-principais: hsl(221, 39%, 11%);
+    --color-font-branco: hsl(0, 0%, 100%);
+    --color-font-preto: hsl(0, 0%, 0%);
+    --fundo-secoes: hsl(210, 20%, 98%);
+    --color-cinza: hsl(210, 3%, 40%);
+    --color-back-footer: hsl(220, 43%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+
+body {
+    min-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Roboto;
+    background-color: var(--fundo-secoes);
+}
+
+#menu-color {
+    border-bottom: 3px solid var(--color-primaria);
+    color: var(--color-primaria);
+}
+
+.container {
+    height: auto;
+    min-width: 100%;
+    padding: 0;
+    margin: 0 auto 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.h2-title-section,
+.subtitle-services {
+    width: 100%;
+    height: auto;
+    padding: .5rem auto;
+    text-align: left;
+}
+
+.h2-title-section strong {
+    font-size: 3.1rem;
+    color: var(--textos-principais);
+    font-weight: 700;
+}
+
+.subtitle-services {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.subtitle-services span {
+    display: block;
+    max-width: 70rem;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-cinza);
+    padding: .5rem 1rem;
+    margin: auto;
+}
+
+
+article.banner-secao {
+    width: 100%;
+    background-color: var(--color-primaria);
+    min-height: 40rem;
+    height: 40rem;
+    text-align: center;
+    margin: 0 auto 8rem;
+}
+
+.banner {
+    margin: auto;
+
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+    font-size: 5rem;
+    color: var(--color-font-branco);
+    margin-bottom: 2rem;
+}
+
+.banner p {
+    width: 80%;
+    color: var(--color-font-branco);
+    font-size: 1.9rem;
+}
+
+.conteudo-principal {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.conteudo-principal-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.servicos-cotacoes {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    margin-bottom: 5rem;
+    padding: 1.5rem 0;
+}
+
+.servicos-cotacoes h2 {
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--color-primaria);
+    margin-bottom: 5rem;
+}
+
+div.sumary-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+details {
+    width: 98%;
+    height: auto;
+    border-radius: .8rem;
+    padding: 1rem 1.5rem;
+    margin: auto;
+    text-align: left;
+    background-color: var(--color-font-branco);
+    color: var(--color-cinza);
+    font-size: 1.6rem;
+    border: 1px solid #d1c9c9;
+}
+
+details:hover {
+    box-shadow: 0px 2px 15px -7px #585858;
+    background-color: #f5f5f5;
+}
+
+summary {
+    font-weight: bold;
+    padding: .5rem 0 0;
+    color: var(--color-font-preto);
+    font-size: 1.5rem;
+    list-style: none;
+    display: block;
+    cursor: pointer;
+}
+
+details p {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+}
+
+summary::after {
+    content: '+';
+    float: right;
+    font-size: 25px;
+}
+
+details[open] summary::after {
+    content: '_';
+    font-size: 25px;
+    float: right;
+}
+
+.secao-resposta-encontrada {
+    text-align: center;
+    height: auto;
+    padding: 5rem 0 2rem;
+    margin: 15rem 0 8rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 9px 13px -9px #585858;
+}
+
+.secao-resposta-encontrada>.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-title-sessao {
+    width: 100%;
+    height: auto;
+    padding: .5rem auto;
+    text-align: center;
+
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.h2-title-sessao strong {
+    font-size: 3.1rem;
+    color: var(--textos-principais);
+    font-weight: 700;
+}
+
+.container-cards {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 5rem 2rem;
+    width: 100%;
+
+}
+
+.card-resposta {
+    width: 20rem;
+    background-color: #e5f4fa;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30rem;
+    height: 15rem;
+}
+
+.container-img {
+    width: 5rem;
+    height: 5rem;
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primaria);
+}
+
+.card-resposta a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--color-cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card-resposta:hover {
+    background-color: #9ee3ff;
+    color: var(--color-primaria);
+}
+
+
+.container-img+p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--textos-principais);
+}
+
+.container-img+p+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-cinza);
+}
+
+/*
+================
+  MEDIA QUERIES
+================
+*/
+
+@media (max-width: 900px) {
+
+    .conteudo-principal-container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+
+    .secao-resposta-encontrada {
+        width: 100%;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        padding: 2rem 1rem 2rem;
+    }
+
+    .card-resposta {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+}

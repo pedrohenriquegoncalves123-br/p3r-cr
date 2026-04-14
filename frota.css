@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../tipografia/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+
+:root {
+    --color-primaria: #2563EB;
+    --hover-botoes: #1D4ED8;
+    --textos-principais: hsl(221, 39%, 11%);
+    --color-font-branco: hsl(0, 0%, 100%);
+    --color-font-preto: hsl(0, 0%, 0%);
+    --fundo-secoes: hsl(210, 20%, 98%);
+    --color-cinza: hsl(210, 3%, 40%);
+    --color-back-footer: hsl(220, 43%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+
+body {
+    min-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Roboto;
+    background-color: var(--fundo-secoes);
+}
+
+.container {
+    height: auto;
+    min-width: 100%;
+    padding: 0;
+    margin: 0 auto 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.h2-title-section,
+.subtitle-services {
+    width: 100%;
+    height: auto;
+    padding: .5rem auto;
+    text-align: center;
+}
+
+.h2-title-section strong {
+    font-size: 4rem;
+    color: var(--textos-principais);
+    font-weight: 700;
+}
+
+.subtitle-services {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.subtitle-services span {
+    display: block;
+    max-width: 70rem;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-cinza);
+    padding: .5rem 1rem;
+    margin: auto;
+}
+
+
+article.banner-secao {
+    width: 100%;
+    background-color: var(--color-primaria);
+    height: 28rem;
+    min-height: 20rem;
+    max-height: 30rem;
+    text-align: center;
+    margin: 0 auto 5rem;
+}
+
+.banner {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+    font-size: 5rem;
+    color: var(--color-font-branco);
+    margin-bottom: 2rem;
+}
+
+.banner p {
+    color: var(--color-font-branco);
+    font-size: 1.9rem;
+}
+
+.conteudo-principal {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.conteudo-principal-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.secao-frota {
+    min-width: 100% !important;
+    box-sizing: border-box;
+    height: auto;
+    padding-bottom: 5rem;
+    margin-bottom: 10rem;
+}
+
+.container-frota-secao {
+    width: 100%;
+    height: 80rem;
+    padding: 5rem 0 3rem;
+}
+
+.container-frota-secao>.container {
+    margin-bottom: 6.5rem;
+}
+
+.cards-nossa-frota {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.cards-nossa-frota>.container {
+    width: fit-content;
+
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3rem;
+
+    margin: 0 auto 1rem;
+}
+
+.card-frota {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 12px -7px #3a3939;
+    border-radius: 1rem;
+
+    max-width: 100%;
+    min-width: 20rem;
+    width: 28rem;
+    height: 20rem;
+
+    padding-top: 1.5rem;
+
+    background-color: var(--fundo-secoes);
+}
+
+.content-card {
+    width: 100%;
+    max-width: 100%;
+    height: 75%;
+    text-align: center;
+    padding: 1.5rem 0 0;
+}
+
+.content-card h3 {
+    width: 100%;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-card p {
+    width: 100%;
+    height: 8rem;
+    font-weight: 500;
+    color: var(--color-cinza);
+    padding: .8rem 2.5rem 0;
+    font-size: 1.5em;
+}
+
+.section-cards-veiculos {
+    min-width: 100%;
+    padding: 0;
+    margin: 10rem 0 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-cards-veiculos>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    max-width: 100%;
+    height: 50rem;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.card-veiculos {
+    max-width: 100%;
+    min-width: 20rem;
+    width: 28rem;
+    height: auto;
+
+    text-align: left;
+
+    border-radius: 1rem;
+    border-top: 4px solid var(--hover-botoes);
+
+    padding: 3rem 2rem 3rem;
+    background-color: var(--fundo-secoes);
+    box-shadow: 1px 2px 12px -7px #232222;
+}
+
+.title-veiculos {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #232222;
+    margin-bottom: 2.3rem;
+}
+
+.info-caminhoes {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.3rem;
+}
+
+.info-caminhoes span {
+    color: var(--color-primaria);
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+p.info-caminhoes+p {
+    font-size: 1.6rem;
+    color: var(--color-cinza);
+
+}
+
+ul.list-card {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+ul li::marker {
+    color: var(--color-primaria);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul.list-card li {
+    width: 100%;
+    list-style-position: inside;
+    height: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--color-cinza);
+}
+
+#button-card {
+    margin-top: 2rem;
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-primaria);
+}
+
+@media (max-width: 767px) {
+    .secao-frota {
+        min-width: 100% !important;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .container-frota-secao {
+        width: 100%;
+        height: auto;
+        padding: 5rem 0 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .card-frota {
+        max-width: 100%;
+        width: 100%;
+        height: 20rem;
+    }
+
+    .section-cards-veiculos {
+        margin: 10rem 0 -20rem;
+
+    }
+
+    .section-cards-veiculos>.container {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 3rem auto 0;
+    }
+
+    .card-veiculos {
+        max-width: 100%;
+        min-width: 20rem;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+    }
+
+}

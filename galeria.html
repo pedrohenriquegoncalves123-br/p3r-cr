@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Sobre a TransExpress</title>
+</head>
+
+<body>
+    <div id="topo"></div>
+    <header class="cabecalho">
+        <div class="container-header">
+            <div class="logo">
+                <a href="Inicio.html" style="text-decoration: none;">
+                    <img src="icone-logo-site.png" alt="[LOGO-SITE]">
+                    <p class="name-empresa"><strong>TransExpress</strong></p>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <input type="checkbox" id="tg-toggle" name="tg-toggle" style="display: none;">
+                <div class="container-menu">
+                    <ul class="menu">
+                        <li><a href="../paginas.site/Inicio.html">Início</a></li>
+                        <li><a href="../paginas.site/sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="frota.html">Frota</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="galeria.html" id="menu-color">Galeria</a></li>
+                        <li><a href="contato.html" class="btn-orcamento">Solicitar<span> Orçamento</span></a></li>
+                    </ul>
+                </div>
+                <label for="tg-toggle" class="hamburguer">
+                    <img src="menu-hamburguer-icone.png" alt="" width="30px" height="30px">
+                </label>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <section class="secao-galeria">
+            <article class="banner-secao">
+                <div class="banner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
+                        stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-book-image-icon lucide-book-image">
+                        <path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17" />
+                        <path
+                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                        <circle cx="10" cy="8" r="2" />
+                    </svg>
+                    <h1>Nossa Galeria</h1>
+                    <p class="text-banner">Conheça nossa infraestrutura, frota moderna e operações em todo o Brasil</p>
+                </div>
+            </article>
+            <section class="secao-menu-galery" id="menu-galeria">
+                <div class="container-menu-galery container">
+                    <div class="todas">
+                        <input type="radio" id="todas" name="filtro-galeria">
+                        <label for="todas">Todas</label>
+                    </div>
+                    <div class="frota">
+                        <input type="radio" id="frota" name="filtro-galeria">
+                        <label for="frota">Frota</label>
+                    </div>
+                    <div class="armazens">
+                        <input type="radio" id="armazens" name="filtro-galeria">
+                        <label for="armazens">Armazéns</label>
+                    </div>
+                    <div class="operacoes">
+                        <input type="radio" id="operacoes" name="filtro-galeria">
+                        <label for="operacoes">Operações</label>
+                    </div>
+                    <div class="instalacoes">
+                        <input type="radio" id="instalacoes" name="filtro-galeria">
+                        <label for="instalacoes">Instalações</label>
+                    </div>
+                </div>
+                <article class="cards-galery container">
+                    <article class="card-galeria card">
+                        <div class="img-fundo" id="frota-moderna">
+                            <img src="https://images.unsplash.com/photo-1539508521571-f4e819b0c1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0cnVjayUyMGZsZWV0JTIwcGFya2luZ3xlbnwxfHx8fDE3NzQ5Nzc0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Frota Moderna de Caminhões</strong></p>
+                            <p class="text-card">Nossa frota completa de caminhões de última geração, equipados com
+                                tecnologia de rastreamento e segurança.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card">
+                        <div class="img-fundo" id="centro-distribuicao">
+                            <img src="https://images.unsplash.com/photo-1771530789155-b1f03fbf82b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBpbnRlcmlvciUyMGxvZ2lzdGljc3xlbnwxfHx8fDE3NzQ5Nzc0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Centro de Distribuição</strong></p>
+                            <p class="text-card">Armazém moderno com sistema WMS integrado e capacidade para 50 mil
+                                pallets.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card">
+                        <div class="img-fundo" id="escritorio-central">
+                            <img src="https://images.unsplash.com/photo-1759668826005-a87627b23253?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjBvZmZpY2UlMjBtb2Rlcm58ZW58MXx8fHwxNzc0OTc3MTMyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Escritório Central</strong></p>
+                            <p class="text-card">Nossa sede administrativa com equipe dedicada ao atendimento e suporte
+                                aos clientes.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="motorista-profissional">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1768554058655-ffc14e476826?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGRyaXZlciUyMHByb2Zlc3Npb25hbHxlbnwxfHx8fDE3NzQ4OTk2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Motorista Profissional</strong></p>
+                            <p class="text-card">Equipe de motoristas altamente qualificados e comprometidos com a
+                                segurança.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="operacao-carga">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1657490016235-8246d81064d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGxvYWRpbmclMjBkb2NrfGVufDF8fHx8MTc3NDk3NzQ4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Operação de Carga</strong></p>
+                            <p class="text-card">Processo eficiente de carga e descarga com equipamentos modernos.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="centro-logistico">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1617139962074-4827ed772aca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXN0cmlidXRpb24lMjBjZW50ZXIlMjBhZXJpYWx8ZW58MXx8fHwxNzc0OTc3NDg1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Centro Logístico Integrado</strong></p>
+                            <p class="text-card">Vista aérea do nosso complexo logístico com 100 mil m² de área.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="caminhoes-refrigerados">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1738507869660-b44ea20ab037?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB0cnVjayUyMGhpZ2h3YXl8ZW58MXx8fHwxNzczNDAxODQ2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Caminhões Refrigerados</strong></p>
+                            <p class="text-card">Frota especializada para transporte de cargas refrigeradas e
+                                perecíveis.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="van-entrgas">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1609188077093-bafe2e2c118d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMHZhbiUyMGNpdHl8ZW58MXx8fHwxNzczNDI2MTE1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Van de Entregas Urbanas</strong></p>
+                            <p class="text-card">Veículos ágeis para entregas expressas em centros urbanos.</p>
+                        </div>
+                    </article>
+                    <article class="card-galeria card" id="estoque-organizado">
+                        <div class="img-fundo">
+                            <img src="https://images.unsplash.com/photo-1773125929765-99d4d67e831d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBzaGlwcGluZyUyMGJveGVzfGVufDF8fHx8MTc3MzQyNjExNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                                alt="">
+                        </div>
+                        <div class="content-card">
+                            <p><strong>Estoque Organizado</strong></p>
+                            <p class="text-card">Sistema de armazenagem vertical otimizado com controle informatizado.
+                            </p>
+                        </div>
+                    </article>
+                </article>
+            </section>
+            <section class="secao-description">
+                <article class="container description">
+                    <div class="cards-descricao">
+                        <p class="number"><strong>+250</strong></p>
+                        <p class="descricao-servicos">
+                            Veiculos na frota
+                        </p>
+                    </div>
+                    <div class="cards-descricao">
+                        <p class="number"><strong>15</strong></p>
+                        <p class="descricao-servicos">
+                            Centros de Distribuição
+                        </p>
+                    </div>
+                    <div class="cards-descricao">
+                        <p class="number"><strong>500k+</strong></p>
+                        <p class="descricao-servicos">
+                            m<sup>2</sup> de Armazém
+                        </p>
+                    </div>
+                    <div class="cards-descricao">
+                        <p class="number"><strong>25+</strong></p>
+                        <p class="descricao-servicos">
+                            Anos de Experiência
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer class="footer-site">
+        <article class="container-footer">
+            <section class="column-footer">
+                <div class="logo-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck-icon lucide-truck">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <p class="logo-footer-p"><strong>TransExpress</strong></p>
+                </div>
+                <p>Conectando empresas a seus destinos com segurança e eficiência há mais de 25 anos.</p>
+                <div class="links-icones">
+                    <a href="#" class="facebook">
+                        <img src="facebook icone.png" alt="" class="icone-facebook">
+                    </a>
+                    <a href="#" class="instagram">
+                        <img src="instagram icone.png" alt="" class="instagram-icone">
+                    </a>
+                    <a href="#" class="linkedin">
+                        <img src="linkedin icone.png" alt="" class="linkedin-icone">
+                    </a>
+                    <a href="#" class="twiter">
+                        <img src="x icone.png" alt="" class="x-icone" height="15px">
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer servicos-footer">
+                <h4><b>Serviços</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#transporte-rodoviario">
+                        <p>Transporte Rodoviário</p>
+                    </a>
+                    <a href="#entregas-expressas">
+                        <p>Entregas Expressas</p>
+                    </a>
+                    <a href="#transporte-maritimo">
+                        <p>Transporte Marítimo</p>
+                    </a>
+                    <a href="#armazenagem">
+                        <p>Armazenagem</p>
+                    </a>
+                    <a href="#just-in-time">
+                        <p>Just-in-Time</p>
+                    </a>
+                    <a href="#cargas-especiais">
+                        <p>Cargas Especiais</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer empresa-footer">
+                <h4><b>Empresa</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#sobre">
+                        <p>Sobre Nós</p>
+                    </a>
+                    <a href="#frota">
+                        <p>Nossa Frota</p>
+                    </a>
+                    <a href="#contato">
+                        <p>Contato</p>
+                    </a>
+                    <a href="#trabalhe-conosco">
+                        <p>Trabalhe Conosco</p>
+                    </a>
+                    <a href="#blog">
+                        <p>Blog</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer contato-footer">
+                <h4><b>Contato</b></h4>
+                <div class="secao-links-footer-empr">
+                    <p>Av. Logística, 1000</p>
+                    <p>São Paulo - SP</p>
+                    <p>(11) 3456-7890</p>
+                    <p>contato@transexpress.com.br</p>
+                </div>
+            </section>
+        </article>
+        <p class="p-footer-final">© 2026 TransExpress - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#topo" class="botao-topo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="lucide lucide-square-chevron-up-icon lucide-square-chevron-up">
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="m8 14 4-4 4 4" />
+        </svg></a>
+
+    <script>
+        const filtros = document.querySelectorAll('input[name="filtro-galeria"]');
+
+        const categorias = {
+            'todas': ['frota-moderna', 'centro-distribuicao', 'escritorio-central', 'motorista-profissional', 'operacao-carga', 'centro-logistico', 'caminhoes-refrigerados', 'van-entrgas', 'estoque-organizado'],
+            'frota': ['frota-moderna', 'caminhoes-refrigerados'],
+            'armazens': ['centro-distribuicao', 'centro-logistico', 'estoque-organizado'],
+            'operacoes': ['motorista-profissional', 'operacao-carga', 'van-entrgas'],
+            'instalacoes': ['escritorio-central']
+        };
+
+        filtros.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const idSelecionado = radio.id;
+                const idsPermitidos = categorias[idSelecionado];
+
+                categorias['todas'].forEach(id => {
+                    const elemento = document.getElementById(id);
+                    if (elemento) {
+                        const cardCompleto = elemento.closest('.card-galeria');
+
+                        if (idsPermitidos.includes(id)) {
+
+                            cardCompleto.style.display = "block";
+
+                            setTimeout(() => {
+                                cardCompleto.classList.remove('card-hidden');
+                            }, 10);
+                        } else {
+
+                            cardCompleto.classList.add('card-hidden');
+
+                            setTimeout(() => {
+                                if (cardCompleto.classList.contains('card-hidden')) {
+                                    cardCompleto.style.display = "none";
+                                }
+                            }, 400);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

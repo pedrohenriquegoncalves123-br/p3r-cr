@@ -1,0 +1,445 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../tipografia/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+
+:root {
+    --color-primaria: #2563EB;
+    --hover-botoes: #1D4ED8;
+    --textos-principais: hsl(221, 39%, 11%);
+    --color-font-branco: hsl(0, 0%, 100%);
+    --color-font-preto: hsl(0, 0%, 0%);
+    --fundo-secoes: hsl(210, 20%, 98%);
+    --color-cinza: hsl(210, 3%, 40%);
+    --color-back-footer: hsl(220, 43%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+
+body {
+    min-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: Roboto;
+    background-color: var(--fundo-secoes);
+}
+
+.container {
+    height: auto;
+    min-width: 100%;
+    padding: 0;
+    margin: 0 auto 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+main.conteudo-principal {
+    width: 100%;
+    margin: 0 auto 0;
+    box-sizing: border-box;
+}
+
+.secao-sobre {
+    width: 100%;
+    max-width: 1550px;
+    height: auto;
+    margin: 10rem auto 0;
+}
+
+article.banner-secao {
+    width: 100%;
+    background-color: var(--color-primaria);
+    height: 28rem;
+    min-height: 20rem;
+    max-height: 30rem;
+    margin: 0 auto 5rem;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+    font-size: 5rem;
+    color: var(--color-font-branco);
+    margin-bottom: 2rem;
+}
+
+.banner p {
+    color: var(--color-font-branco);
+    font-size: 1.9rem;
+}
+
+section.conteudo-pagina {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+section.cards {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    margin-bottom: 10rem;
+}
+
+.cards-sobre {
+    padding-top: .8rem;
+    text-align: center;
+    width: 30rem;
+}
+
+.cards-sobre svg {
+    width: 70px;
+    margin-bottom: .5rem;
+}
+
+.numbers-info {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--textos-principais);
+}
+
+.text-cards-sobre {
+    font-size: 1.3rem;
+    color: var(--color-cinza);
+}
+
+.nossa-historia {
+    width: 100%;
+    max-width: 1550px;
+    margin: 0 auto 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nossa-historia>article.container {
+    width: 80%;
+    height: 70rem;
+    padding: 5rem 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: auto;
+}
+
+.historia-empresa {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    padding-left: 15rem;
+    text-align: left;
+}
+
+.text-historia {
+    width: 100%;
+    text-align: left;
+    color: var(--textos-principais);
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+
+.historia-empresa p {
+    color: var(--textos-principais);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+div.container-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-flutuante {
+    border: 0;
+    text-decoration: none;
+    border-radius: 2rem;
+    margin: 0 auto 0;
+    width: 70%;
+    max-width: 70%;
+    min-height: 100%;
+    height: 100%;
+
+    background-image: url("https://images.unsplash.com/photo-1694702740570-0a31ee1525c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwxfHx8fDE3NzQ4NDAyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
+    background-size: cover;
+    background-position: center;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.secao-principio {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.title-secao {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto 10rem;
+    text-align: center;
+}
+
+.title-secao span {
+    margin: auto;
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--textos-principais);
+    font-weight: 700;
+}
+
+.secao-principio>article.container {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    padding: 10rem 0 10rem;
+}
+
+.secao-principio>article.container .card {
+    width: 31rem;
+}
+
+.card .content {
+    width: 100;
+    min-width: 100%;
+}
+
+.title-card {
+    width: 100%;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: var(--textos-principais);
+}
+
+.conteudo-card {
+    width: 100%;
+    color: var(--color-cinza);
+    font-size: 1.6rem;
+}
+
+.secao-diferenciais {
+    width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.secao-diferenciais .container {
+    width: 100%;
+    height: 55rem;
+}
+
+.secao-cards {
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-cards .container {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0 10rem;
+
+    display: flex;
+    gap: 3.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-diferenciais {
+    text-align: left;
+    width: 48%;
+    height: auto;
+    padding: 5rem 1.5rem;
+    background-color: var(--color-font-branco);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 20px -14px #4a4a4a;
+}
+
+.cards-diferenciais h3 {
+    color: var(--textos-principais);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cards-diferenciais p {
+    font-size: 1.6rem;
+    color: var(--color-cinza);
+    width: 100%;
+    height: auto;
+}
+
+/*
+====================
+====MediaQueries====
+*/
+
+@media (max-width: 767px) {
+    .conteudo-pagina {
+        width: 100%;
+        max-width: 767px;
+        height: auto;
+        padding: 0 5px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-sobre{
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .nossa-historia {
+        margin-bottom: 20rem;
+    }
+
+    .nossa-historia>article.container {
+        flex-direction: column;
+        display: block;
+    }
+
+    .historia-empresa {
+        min-width: 100%;
+        height: auto;
+        display: block;
+        padding: 0 0 0 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .container-img {
+        min-width: 100%;
+        min-height: auto;
+        padding-bottom: 5rem;
+        display: inline-block;
+    }
+
+    .imagem-flutuante {
+        min-width: 100%;
+        margin: 0 auto 0;
+    }
+
+    .secao-principio {
+        width: 100%;
+        margin-top: 30rem;
+    }
+
+    .secao-principio>article.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 5px 0;
+
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        min-width: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .card:hover {
+
+        box-shadow: 1px 4px 20px -7px #4a4a4a;
+    }
+
+    .secao-diferenciais .container {
+        width: 100%;
+        height: auto;
+        padding: 5rem 0 5rem;
+    }
+
+    .secao-cards {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .cards-diferenciais {
+        text-align: left;
+        width: 100%;
+        height: auto;
+        padding: 5rem 1.5rem;
+        background-color: var(--color-font-branco);
+        border-radius: 1rem;
+        box-shadow: 0px 4px 20px -14px #4a4a4a;
+    }
+}

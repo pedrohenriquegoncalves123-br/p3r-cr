@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Serviços</title>
+    <style>
+        #menu-color {
+            border-bottom: 3px solid var(--color-primaria);
+            color: var(--color-primaria);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topo"></div>
+    <header class="cabecalho">
+        <div class="container-header">
+            <div class="logo">
+                <a href="Inicio.html" style="text-decoration: none;">
+                    <img src="icone-logo-site.png" alt="[LOGO-SITE]">
+                    <p class="name-empresa"><strong>TransExpress</strong></p>
+                </a>
+            </div>
+            <nav class="nav-bar">
+                <input type="checkbox" id="tg-toggle" name="tg-toggle" style="display: none;">
+                <div class="container-menu">
+                    <ul class="menu">
+                        <li><a href="../paginas.site/Inicio.html">Início</a></li>
+                        <li><a href="../paginas.site/sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html" id="menu-color">Serviços</a></li>
+                        <li><a href="frota.html">Frota</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contato.html" class="btn-orcamento">Solicitar Orçamento</a></li>
+                    </ul>
+                </div>
+
+                <label for="tg-toggle" class="hamburguer">
+                    <img src="menu-hamburguer-icone.png" alt="" width="30px" height="30px">
+                </label>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="conteudo-principal">
+        <article class="banner-secao">
+            <div class="banner">
+                <h1>Nossos Serviços</h1>
+                <p class="text-banner">Soluções completas em transporte e logística para atender todas as necessidades
+                    do seu negócio</p>
+            </div>
+        </article>
+        <section class="conteudo-principal-container">
+            <article class="container container-cards-serv">
+
+                <div class="card-servicos card1" id="transporte-rodoviario">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-truck-icon lucide-truck">
+                                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                                <path d="M15 18H9" />
+                                <path
+                                    d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                                <circle cx="17" cy="18" r="2" />
+                                <circle cx="7" cy="18" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Transporte Rodoviário</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Transporte de cargas por rodovias com cobertura nacional, utilizando veículos
+                            modernos e
+                            rastreamento em tempo real.
+                        </p>
+                        <ul class="list-card">
+                            <li>cobertura Nacional</li>
+                            <li>Rastreamento 24/7</li>
+                            <li>Frota Moderna</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+                <div class="card-servicos card2" id="entregas-expressas">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-package-icon lucide-package">
+                                <path
+                                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+                                <path d="M12 22V12" />
+                                <polyline points="3.29 7 12 12 20.71 7" />
+                                <path d="m7.5 4.27 9 5.15" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Entregas Expressas</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Serviço de entregas urgentes com prazos reduzidos para atender suas necessidades
+                            mais
+                            imediatas.
+                        </p>
+                        <ul class="list-card">
+                            <li>Entrga em 24h</li>
+                            <li>Same day delivery</li>
+                            <li>Rotas otimizadas</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+                <div class="card-servicos card3" id="transporte-maritimo">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-ship-icon lucide-ship">
+                                <path d="M12 10.189V14" />
+                                <path d="M12 2v3" />
+                                <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
+                                <path
+                                    d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 2.81 7.76" />
+                                <path
+                                    d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Transporte Marítimo</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Soluções de transporte por via marítima para cargas de grande volume e
+                            importação/exportação.
+                        </p>
+                        <ul class="list-card">
+                            <li>Importção/Exportação</li>
+                            <li>FCl e LCL</li>
+                            <li>Desmbaraço aduaneiro</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+                <div class="card-servicos card4" id="armazenagem">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-warehouse-icon lucide-warehouse">
+                                <path d="M18 21V10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v11" />
+                                <path
+                                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 1.132-1.803l7.95-3.974a2 2 0 0 1 1.837 0l7.948 3.974A2 2 0 0 1 22 8z" />
+                                <path d="M6 13h12" />
+                                <path d="M6 17h12" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Armazenagem</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Armazéns modernos e seguros para estocagem de suas mercadorias com gestão
+                            profissional
+                            de estoque.
+                        </p>
+                        <ul class="list-card">
+                            <li>WMS integrado</li>
+                            <li>Cross-docking</li>
+                            <li>Picking e packing</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+                <div class="card-servicos card5" id="just-in-time">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-clock-icon lucide-clock">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Logística Just-in-Time</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Entregas programadas e precisas para otimizar sua cadeia de produção e reduzir
+                            custos
+                            com estoque.
+                        </p>
+                        <ul class="list-card">
+                            <li>Janelas de entrega</li>
+                            <li>Milk run</li>
+                            <li>EDi Integrado</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+                <div class="card-servicos card6" id="cargas-especiais">
+                    <a href="#">
+                        <div class="imagem-fundo">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-shield-icon lucide-shield">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                            </svg>
+                        </div>
+                        <h3 class="title-cards">
+                            <strong>Cargas Especiais</strong>
+                        </h3>
+                        <p class="text-cards">
+                            Transporte especializado para cargas frágeis, perecíveis, perigosas ou de alto valor
+                            agregado.
+                        </p>
+                        <ul class="list-card">
+                            <li>Equipe especializada</li>
+                            <li>Equipamentos adequados</li>
+                            <li>Certificações</li>
+                            <a id="button-card" href="">Saiba mais ➔</a>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+            <section class="secao-ajuda">
+                <h2 class="h2-title-section"><strong>
+                        Não encontrou o que procura?
+                    </strong></h2>
+                <p class="subtitle-services">
+                    <span>Entre em contato conosco e descubra como podemos criar uma solução personalizada para seu
+                        negócio</span>
+                </p>
+                </article>
+                <div class="container">
+                    <a href="contato.html" id="fale-conosco">Fale Conosco</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <footer class=" footer-site">
+        <article class="container-footer">
+            <section class="column-footer">
+                <div class="logo-footer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-truck-icon lucide-truck">
+                        <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+                        <path d="M15 18H9" />
+                        <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" />
+                        <circle cx="17" cy="18" r="2" />
+                        <circle cx="7" cy="18" r="2" />
+                    </svg>
+                    <p class="logo-footer-p"><strong>TransExpress</strong></p>
+                </div>
+                <p>Conectando empresas a seus destinos com segurança e eficiência há mais de 25
+                    anos.</p>
+                <div class="links-icones">
+                    <a href="#" class="facebook">
+                        <img src="facebook icone.png" alt="" class="icone-facebook">
+                    </a>
+                    <a href="#" class="instagram">
+                        <img src="instagram icone.png" alt="" class="instagram-icone">
+                    </a>
+                    <a href="#" class="linkedin">
+                        <img src="linkedin icone.png" alt="" class="linkedin-icone">
+                    </a>
+                    <a href="#" class="twiter">
+                        <img src="x icone.png" alt="" class="x-icone" height="15px">
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer servicos-footer">
+                <h4><b>Serviços</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#transporte-rodoviario">
+                        <p>Transporte Rodoviário</p>
+                    </a>
+                    <a href="#entregas-expressas">
+                        <p>Entregas Expressas</p>
+                    </a>
+                    <a href="#transporte-maritimo">
+                        <p>Transporte Marítimo</p>
+                    </a>
+                    <a href="#armazenagem">
+                        <p>Armazenagem</p>
+                    </a>
+                    <a href="#just-in-time">
+                        <p>Just-in-Time</p>
+                    </a>
+                    <a href="#cargas-especiais">
+                        <p>Cargas Especiais</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer empresa-footer">
+                <h4><b>Empresa</b></h4>
+                <div class="secao-links-footer">
+                    <a href="#sobre">
+                        <p>Sobre Nós</p>
+                    </a>
+                    <a href="#frota">
+                        <p>Nossa Frota</p>
+                    </a>
+                    <a href="#contato">
+                        <p>Contato</p>
+                    </a>
+                    <a href="#trabalhe-conosco">
+                        <p>Trabalhe Conosco</p>
+                    </a>
+                    <a href="#">
+                        <p>Blog</p>
+                    </a>
+                </div>
+            </section>
+            <section class="column-footer contato-footer">
+                <h4><b>Contato</b></h4>
+                <div class="secao-links-footer-empr">
+                    <p>Av. Logística, 1000</p>
+                    <p>São Paulo - SP</p>
+                    <p>(11) 3456-7890</p>
+                    <p>contato@transexpress.com.br</p>
+                </div>
+            </section>
+        </article>
+        <p class="p-footer-final">© 2026 TransExpress - Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="#topo" class="botao-topo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="lucide lucide-square-chevron-up-icon lucide-square-chevron-up">
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="m8 14 4-4 4 4" />
+        </svg></a>
+</body>
+
+</html>
