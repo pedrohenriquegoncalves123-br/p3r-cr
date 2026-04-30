@@ -479,7 +479,7 @@ div.content-img-sobre img {
 
 .container-frota-secao {
     width: 100%;
-    height: 80rem;
+    min-height: 70rem;
     padding: 5rem 0 3rem;
 }
 
