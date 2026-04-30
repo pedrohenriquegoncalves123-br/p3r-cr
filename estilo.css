@@ -494,14 +494,15 @@ div.content-img-sobre img {
 
 .cards-nossa-frota>.container {
     width: fit-content;
+    min-height: 40rem;
 
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2.3rem;
-
+    gap: 2.5rem;
+    padding: 2rem 0 1rem;
     margin: 0 auto 1rem;
 }
 
@@ -509,14 +510,12 @@ div.content-img-sobre img {
     box-sizing: border-box;
     box-shadow: 1px 1px 12px -7px #3a3939;
     border-radius: 1rem;
-
     max-width: 100%;
     min-width: 20rem;
     width: 28rem;
     height: 20rem;
-
+    flex-shrink: 1;
     padding-top: 1.5rem;
-
     background-color: var(--fundo-secoes);
 }
 
